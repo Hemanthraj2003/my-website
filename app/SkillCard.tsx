@@ -1,11 +1,11 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 
 interface SkillCardProps {
   name: string;
   rating: number;
-  imgsrc: any;
+  imgsrc: StaticImageData;
 }
 
 const SkillCard: React.FC<SkillCardProps> = ({ name, rating, imgsrc }) => {

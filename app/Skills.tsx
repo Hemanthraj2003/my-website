@@ -13,9 +13,9 @@ import NODE from "./assets/node.png";
 import ELE from "./assets/electron.png";
 import BOOT from "./assets/boot.png";
 import TAIL from "./assets/tailwind.png";
-import MERN from "./assets/mern.png";
-import NextType from "./assets/Next+typescript.png";
-import ReactNodeFire from "./assets/native+firebase.png";
+// import MERN from "./assets/mern.png";
+// import NextType from "./assets/Next+typescript.png";
+// import ReactNodeFire from "./assets/native+firebase.png";
 import { Carousel } from "./Carousel";
 
 const Skills: React.FC = () => {

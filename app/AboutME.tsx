@@ -18,7 +18,7 @@ const AboutME = () => {
         <div className="sm:text-lg text-sm ">
           <span>HI,</span>
           <div>
-            I'm{" "}
+            I&apos;m{" "}
             <span className="font-black  text-secondary hover:text-[22px] transition-all duration-300">
               Hemanth Raj N
             </span>
