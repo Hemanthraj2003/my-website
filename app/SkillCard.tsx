@@ -11,7 +11,7 @@ interface SkillCardProps {
 const SkillCard: React.FC<SkillCardProps> = ({ name, rating, imgsrc }) => {
   console.log(imgsrc);
   return (
-    <div className="flex flex-col md:flex-row flex-shrink-0 flex-grow-0 justify-between items-center  md:border md:border-white/50 w-64 md:w-[280px] md:h-36 h-[200px] py-4 md:py-0 md:pb-0 md:px-4 rounded-2xl ms-3 md:ms-0">
+    <div className="flex flex-col md:flex-row flex-shrink-0 flex-grow-0 justify-between items-center  bg-white/5 hover:bg-white/10 w-64 md:w-[280px] md:h-36 h-[200px] py-4 md:py-0 md:pb-0 md:px-4 rounded-2xl ms-3 md:ms-0">
       <Image src={imgsrc} alt={`${name} logo`} height={120} />
       <div className="flex flex-col gap-2 items-center">
         <div className="text-primary font-black">{name}</div>

@@ -19,39 +19,55 @@ const AboutME = () => {
           <span>HI,</span>
           <div>
             I&apos;m{" "}
-            <span className="font-black  text-secondary hover:text-[22px] transition-all duration-300">
+            <span className="font-black  text-primary hover:text-secondary hover:text-[22px] transition-all duration-500">
               Hemanth Raj N
             </span>
             ,
           </div>
-          <div className="pt-4 hover:text-[22px] transition-all duration-300">
-            Age:<span className="font-black  text-primary"> 20</span>,
+          <div className="pt-4 hover:text-[22px] transition-all duration-500">
+            Age:
+            <span className="font-black  text-primary hover:text-secondary">
+              {" "}
+              20
+            </span>
+            ,
           </div>
-          <div className="pt-4 hover:text-[22px] transition-all duration-300">
+          <div className="pt-4 hover:text-[22px] transition-all duration-500">
             D.O.B:
-            <span className="font-black  text-primary"> 15-nov-2003</span>,
+            <span className="font-black  text-primary hover:text-secondary">
+              {" "}
+              15-nov-2003
+            </span>
+            ,
           </div>
-          <div className="pt-4 hover:text-[22px] transition-all duration-300">
+          <div className="pt-4 hover:text-[22px] transition-all duration-500">
             Address: <br />
-            <span className="font-black  text-primary">
+            <span className="font-black  text-primary hover:text-secondary">
               H.V Halli, R.R Nagar, Banglore
             </span>
           </div>
-          <div className="pt-4 hover:text-[20px] transition-all duration-300">
+          <div className="pt-4 hover:text-[20px] transition-all duration-500">
             Qualification: <br />
             currently doing my{" "}
-            <span className="font-black  text-primary">
+            <span className="font-black  text-primary hover:text-secondary">
               MCA at Banglore Institute of Technology
             </span>
           </div>
         </div>
       </div>
       <div className="">
-        <div className="text-xl text-primary font-black pb-2">About Me:</div>
+        <div className="text-xl text-primary hover:text-secondary font-black pb-2">
+          About Me:
+        </div>
         <p className="text-justify">
           I am a 20-year-old{" "}
-          <span className="text-primary">full-stack developer</span> and{" "}
-          <span className="text-primary">Android Application developer</span>{" "}
+          <span className="text-primary hover:text-secondary">
+            full-stack developer
+          </span>{" "}
+          and{" "}
+          <span className="text-primary hover:text-secondary">
+            Android Application developer
+          </span>{" "}
           with a passion for coding that began in 2020. I have a strong
           foundation in both front-end and back-end technologies, enabling me to
           build dynamic, user-friendly applications. Outside of development, I

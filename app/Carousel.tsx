@@ -64,13 +64,13 @@ export const Carousel: React.FC<CarouselProps> = ({
       <div className="flex justify-between md:justify-evenly items-center md:min-w-full absolute inset-0 md:relative md:p-4  md:visible">
         <button
           onClick={prev}
-          className="p-2 md:bg-white/25 md:hover:bg-white text-accent rounded-[100px]"
+          className="p-2 md:bg-white/5 md:hover:bg-white text-accent rounded-[100px]"
         >
           <ChevronLeft size={isMd ? 25 : 48} />
         </button>
         <button
           onClick={next}
-          className="p-2 md:bg-white/25 md:hover:bg-white text-accent rounded-[100px]"
+          className="p-2 md:bg-white/5 md:hover:bg-white text-accent rounded-[100px]"
         >
           <ChevronRight size={isMd ? 25 : 48} />
         </button>
