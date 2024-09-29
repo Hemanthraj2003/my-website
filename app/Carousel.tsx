@@ -44,17 +44,17 @@ export const Carousel: React.FC<CarouselProps> = ({
   return (
     <div className="relative overflow-hidden">
       <div
-        className="flex gap-4 transition-transform ease-out duration-500"
+        className="flex gap-0 md:gap-4 transition-transform ease-out duration-500"
         style={{
           transform: `translateX(-${
-            (curr * (isMd ? 102 : 105)) / itemsPerView
+            (curr * (isMd ? 105 : 100)) / itemsPerView
           }%)`,
         }}
       >
         {skillArray.map((child, index) => (
           <div
             key={index}
-            className="min-w-full md:min-w-[calc(100%/var(--items-per-view))] flex-shrink-0 flex-grow-0 justify-center"
+            className="min-w-full md:min-w-[calc(100%/var(--items-per-view))] flex-shrink-0 flex-grow-0 flex justify-center md:justify-start"
             style={{ "--items-per-view": itemsPerView } as React.CSSProperties}
           >
             {child}
