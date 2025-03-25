@@ -30,6 +30,7 @@ export default function RootLayout({
           name="google-site-verification"
           content="vRHQajcrr4F5AYSMk-owR01kgZWIiWpDAmewcKmqTi4"
         />
+        <meta name="fast2sms" content="rE9q6LMlaHgzmTPlZNtyiNuFFBiWGMeJ"></meta>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
