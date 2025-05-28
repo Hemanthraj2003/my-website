@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://hemanthraj.dev",
+    url: "https://hemanth-raj.netlify.app",
     title: "Hemanth Raj - Full Stack Developer & Android App Developer",
     description:
       "20-year-old Full Stack Developer and Android Application Developer with expertise in React, Next.js, Node.js, and mobile development.",
@@ -67,7 +67,7 @@ export default function RootLayout({
           content="vRHQajcrr4F5AYSMk-owR01kgZWIiWpDAmewcKmqTi4"
         />
         <meta name="fast2sms" content="rE9q6LMlaHgzmTPlZNtyiNuFFBiWGMeJ" />
-        <link rel="canonical" href="https://hemanthraj.dev" />
+        <link rel="canonical" href="https://hemanth-raj.netlify.app" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

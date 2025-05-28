@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://hemanthraj.dev/sitemap.xml
+Sitemap: https://hemanth-raj.netlify.app/sitemap.xml
 
 # Disallow crawling of any admin or private areas (if any in the future)
 Disallow: /admin/

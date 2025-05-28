@@ -21,7 +21,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 ### 🛠 Technical Features
 - **Interactive skill showcase** with rating system and visual indicators
 - **Project portfolio** with filtering by category and status
-- **Contact integration** with copy-to-clipboard functionality
+- **Direct contact integration** with clickable contact cards
 - **Accessibility features** with proper ARIA labels and keyboard navigation
 - **Custom CSS animations** and utility classes
 
@@ -72,6 +72,8 @@ my-website/
    git clone https://github.com/Hemanthraj2003/my-website.git
    cd my-website
    ```
+
+**Live Demo:** [https://hemanth-raj.netlify.app/](https://hemanth-raj.netlify.app/)
 
 2. **Install dependencies**
    ```bash
