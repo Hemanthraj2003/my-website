@@ -14,8 +14,41 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Hemanth Raj",
-  description: "My personal website ",
+  title: "Hemanth Raj - Full Stack Developer & Android App Developer",
+  description:
+    "20-year-old Full Stack Developer and Android Application Developer with expertise in React, Next.js, Node.js, and mobile development. Passionate about creating dynamic, user-friendly applications.",
+  keywords:
+    "Full Stack Developer, Android Developer, React, Next.js, Node.js, JavaScript, TypeScript, Web Development, Mobile Development, Hemanth Raj",
+  authors: [{ name: "Hemanth Raj N" }],
+  creator: "Hemanth Raj N",
+  publisher: "Hemanth Raj N",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://hemanthraj.dev",
+    title: "Hemanth Raj - Full Stack Developer & Android App Developer",
+    description:
+      "20-year-old Full Stack Developer and Android Application Developer with expertise in React, Next.js, Node.js, and mobile development.",
+    siteName: "Hemanth Raj Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hemanth Raj - Full Stack Developer & Android App Developer",
+    description:
+      "20-year-old Full Stack Developer and Android Application Developer with expertise in React, Next.js, Node.js, and mobile development.",
+    creator: "@hemanth15raj",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -26,11 +59,15 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="forest">
       <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#171717" />
         <meta
           name="google-site-verification"
           content="vRHQajcrr4F5AYSMk-owR01kgZWIiWpDAmewcKmqTi4"
         />
-        <meta name="fast2sms" content="rE9q6LMlaHgzmTPlZNtyiNuFFBiWGMeJ"></meta>
+        <meta name="fast2sms" content="rE9q6LMlaHgzmTPlZNtyiNuFFBiWGMeJ" />
+        <link rel="canonical" href="https://hemanthraj.dev" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
