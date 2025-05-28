@@ -3,13 +3,12 @@ import React, { useState } from "react";
 import ProjectCard from "./components/ProjectCard";
 import { projects, getProjectsByCategory } from "./data/projects";
 
+type CategoryFilter = "all" | "web" | "mobile" | "desktop" | "fullstack";
+type StatusFilter = "all" | "completed" | "in-progress" | "planned";
+
 const Project = () => {
-  const [filter, setFilter] = useState<
-    "all" | "web" | "mobile" | "desktop" | "fullstack"
-  >("all");
-  const [statusFilter, setStatusFilter] = useState<
-    "all" | "completed" | "in-progress" | "planned"
-  >("all");
+  const [filter, setFilter] = useState<CategoryFilter>("all");
+  const [statusFilter, setStatusFilter] = useState<StatusFilter>("all");
 
   const getFilteredProjects = () => {
     let filtered = projects;
@@ -46,21 +45,23 @@ const Project = () => {
           <span className="text-sm font-medium text-gray-400 mr-2 self-center">
             Category:
           </span>
-          {["all", "web", "mobile", "desktop", "fullstack"].map((category) => (
-            <button
-              key={category}
-              onClick={() => setFilter(category as any)}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
-                filter === category
-                  ? "bg-primary text-black"
-                  : "bg-white/5 text-gray-300 hover:bg-white/10 hover:text-primary"
-              }`}
-            >
-              {category === "all"
-                ? "All"
-                : category.charAt(0).toUpperCase() + category.slice(1)}
-            </button>
-          ))}
+          {(["all", "web", "mobile", "desktop", "fullstack"] as const).map(
+            (category) => (
+              <button
+                key={category}
+                onClick={() => setFilter(category)}
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                  filter === category
+                    ? "bg-primary text-black"
+                    : "bg-white/5 text-gray-300 hover:bg-white/10 hover:text-primary"
+                }`}
+              >
+                {category === "all"
+                  ? "All"
+                  : category.charAt(0).toUpperCase() + category.slice(1)}
+              </button>
+            )
+          )}
         </div>
 
         {/* Status Filter */}
@@ -68,23 +69,25 @@ const Project = () => {
           <span className="text-sm font-medium text-gray-400 mr-2 self-center">
             Status:
           </span>
-          {["all", "completed", "in-progress", "planned"].map((status) => (
-            <button
-              key={status}
-              onClick={() => setStatusFilter(status as any)}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
-                statusFilter === status
-                  ? "bg-primary text-black"
-                  : "bg-white/5 text-gray-300 hover:bg-white/10 hover:text-primary"
-              }`}
-            >
-              {status === "all"
-                ? "All"
-                : status
-                    .replace("-", " ")
-                    .replace(/\b\w/g, (l) => l.toUpperCase())}
-            </button>
-          ))}
+          {(["all", "completed", "in-progress", "planned"] as const).map(
+            (status) => (
+              <button
+                key={status}
+                onClick={() => setStatusFilter(status)}
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                  statusFilter === status
+                    ? "bg-primary text-black"
+                    : "bg-white/5 text-gray-300 hover:bg-white/10 hover:text-primary"
+                }`}
+              >
+                {status === "all"
+                  ? "All"
+                  : status
+                      .replace("-", " ")
+                      .replace(/\b\w/g, (l) => l.toUpperCase())}
+              </button>
+            )
+          )}
         </div>
       </div>
 
