@@ -10,7 +10,6 @@ import RJS from "./assets/react.png";
 import NJS from "./assets/next.jpg";
 import EJS from "./assets/express.png";
 import NODE from "./assets/node.png";
-import ELE from "./assets/electron.png";
 import BOOT from "./assets/boot.png";
 import TAIL from "./assets/tailwind.png";
 // import MERN from "./assets/mern.png";
@@ -41,10 +40,10 @@ const Skills: React.FC = () => {
         </div>
         <Carousel>
           <SkillCard name="JavaScript" rating={4.2} imgsrc={JS} />
-          <SkillCard name="TypeScript" rating={3.1} imgsrc={TS} />
+          <SkillCard name="TypeScript" rating={3} imgsrc={TS} />
           <SkillCard name="Java" rating={3.5} imgsrc={JAVA} />
-          <SkillCard name="Python" rating={3.5} imgsrc={PY} />
-          <SkillCard name="C" rating={3.1} imgsrc={C} />
+          <SkillCard name="Python" rating={4} imgsrc={PY} />
+          <SkillCard name="C" rating={3} imgsrc={C} />
           <SkillCard name="HTML/CSS" rating={4.5} imgsrc={HTML} />
         </Carousel>
       </div>
@@ -58,14 +57,13 @@ const Skills: React.FC = () => {
           </h3>
         </div>
         <Carousel>
-          <SkillCard name="ReactJS" rating={4.2} imgsrc={RJS} />
-          <SkillCard name="NextJS" rating={3.2} imgsrc={NJS} />
-          <SkillCard name="ExpressJS" rating={4.1} imgsrc={EJS} />
-          <SkillCard name="NodeJS" rating={4} imgsrc={NODE} />
+          <SkillCard name="ReactJS" rating={4} imgsrc={RJS} />
+          <SkillCard name="NextJS" rating={3} imgsrc={NJS} />
+          <SkillCard name="ExpressJS" rating={4} imgsrc={EJS} />
+          <SkillCard name="NodeJS" rating={3.5} imgsrc={NODE} />
           <SkillCard name="React Native" rating={3.9} imgsrc={RJS} />
-          <SkillCard name="ElectronJS" rating={3.5} imgsrc={ELE} />
-          <SkillCard name="Bootstrap" rating={4.2} imgsrc={BOOT} />
-          <SkillCard name="TailwindCSS" rating={4.2} imgsrc={TAIL} />
+          <SkillCard name="Bootstrap" rating={4.5} imgsrc={BOOT} />
+          <SkillCard name="TailwindCSS" rating={4.5} imgsrc={TAIL} />
         </Carousel>
       </div>
 
@@ -76,8 +74,7 @@ const Skills: React.FC = () => {
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="text-center">
-            <div className="text-3xl mb-2">🎨</div>
-            <h4 className="font-semibold text-primary mb-2">
+            <h4 className="text-lg md:text-xl font-semibold text-primary mb-2">
               Frontend Development
             </h4>
             <p className="text-sm text-gray-300">
@@ -86,8 +83,7 @@ const Skills: React.FC = () => {
             </p>
           </div>
           <div className="text-center">
-            <div className="text-3xl mb-2">⚙️</div>
-            <h4 className="font-semibold text-primary mb-2">
+            <h4 className="text-lg md:text-xl font-semibold text-primary mb-2">
               Backend Development
             </h4>
             <p className="text-sm text-gray-300">
@@ -96,8 +92,7 @@ const Skills: React.FC = () => {
             </p>
           </div>
           <div className="text-center">
-            <div className="text-3xl mb-2">📱</div>
-            <h4 className="font-semibold text-primary mb-2">
+            <h4 className="text-lg md:text-xl font-semibold text-primary mb-2">
               Mobile Development
             </h4>
             <p className="text-sm text-gray-300">

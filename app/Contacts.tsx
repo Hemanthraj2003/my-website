@@ -82,7 +82,7 @@ const Contacts = () => {
 
       {/* Quick Contact Section */}
       <div className="glass-effect p-8 rounded-2xl">
-        <h3 className="text-2xl font-bold gradient-text mb-6 text-center">
+        <h3 className="text-3xl md:text-4xl font-bold gradient-text mb-6 text-center">
           Quick Contact
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -92,10 +92,7 @@ const Contacts = () => {
             className="group p-6 bg-white/5 hover:bg-white/10 rounded-xl transition-all duration-300 hover-lift text-center block"
             aria-label="Send email to Hemanth Raj"
           >
-            <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
-              📧
-            </div>
-            <h4 className="font-semibold text-primary group-hover:text-secondary transition-colors duration-300 mb-2">
+            <h4 className="text-xl font-semibold text-primary group-hover:text-secondary transition-colors duration-300 mb-2">
               Email
             </h4>
             <p className="text-sm text-gray-300 group-hover:text-white transition-colors duration-300 mb-4">
@@ -117,10 +114,7 @@ const Contacts = () => {
             className="group p-6 bg-white/5 hover:bg-white/10 rounded-xl transition-all duration-300 hover-lift text-center block"
             aria-label="Connect with Hemanth Raj on LinkedIn"
           >
-            <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
-              💼
-            </div>
-            <h4 className="font-semibold text-primary group-hover:text-secondary transition-colors duration-300 mb-2">
+            <h4 className="text-xl font-semibold text-primary group-hover:text-secondary transition-colors duration-300 mb-2">
               LinkedIn
             </h4>
             <p className="text-sm text-gray-300 group-hover:text-white transition-colors duration-300 mb-4">
@@ -142,10 +136,7 @@ const Contacts = () => {
             className="group p-6 bg-white/5 hover:bg-white/10 rounded-xl transition-all duration-300 hover-lift text-center block"
             aria-label="Message Hemanth Raj on WhatsApp"
           >
-            <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
-              💬
-            </div>
-            <h4 className="font-semibold text-primary group-hover:text-secondary transition-colors duration-300 mb-2">
+            <h4 className="text-xl font-semibold text-primary group-hover:text-secondary transition-colors duration-300 mb-2">
               WhatsApp
             </h4>
             <p className="text-sm text-gray-300 group-hover:text-white transition-colors duration-300 mb-4">

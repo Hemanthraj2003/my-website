@@ -1,7 +1,7 @@
 "use client";
-import React, { useState } from 'react';
-import { ExternalLink, GitHub, ChevronDown, ChevronUp } from 'react-feather';
-import { Project } from '../data/projects';
+import React, { useState } from "react";
+import { ExternalLink, GitHub, ChevronDown, ChevronUp } from "react-feather";
+import { Project } from "../data/projects";
 
 interface ProjectCardProps {
   project: Project;
@@ -12,29 +12,29 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case 'completed':
-        return 'bg-green-500/20 text-green-400 border-green-500/30';
-      case 'in-progress':
-        return 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30';
-      case 'planned':
-        return 'bg-blue-500/20 text-blue-400 border-blue-500/30';
+      case "completed":
+        return "bg-green-500/20 text-green-400 border-green-500/30";
+      case "in-progress":
+        return "bg-yellow-500/20 text-yellow-400 border-yellow-500/30";
+      case "planned":
+        return "bg-blue-500/20 text-blue-400 border-blue-500/30";
       default:
-        return 'bg-gray-500/20 text-gray-400 border-gray-500/30';
+        return "bg-gray-500/20 text-gray-400 border-gray-500/30";
     }
   };
 
   const getCategoryIcon = (category: string) => {
     switch (category) {
-      case 'web':
-        return '🌐';
-      case 'mobile':
-        return '📱';
-      case 'desktop':
-        return '💻';
-      case 'fullstack':
-        return '🚀';
+      case "web":
+        return "";
+      case "mobile":
+        return "";
+      case "desktop":
+        return "";
+      case "fullstack":
+        return "";
       default:
-        return '⚡';
+        return "";
     }
   };
 
@@ -43,14 +43,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       {/* Header */}
       <div className="flex items-start justify-between mb-4">
         <div className="flex items-center gap-3">
-          <span className="text-2xl">{getCategoryIcon(project.category)}</span>
           <div>
             <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors duration-300">
               {project.title}
             </h3>
             <div className="flex items-center gap-2 mt-1">
-              <span className={`px-2 py-1 rounded-full text-xs font-medium border ${getStatusColor(project.status)}`}>
-                {project.status.replace('-', ' ')}
+              <span
+                className={`px-2 py-1 rounded-full text-xs font-medium border ${getStatusColor(
+                  project.status
+                )}`}
+              >
+                {project.status.replace("-", " ")}
               </span>
               <span className="text-xs text-gray-400 capitalize">
                 {project.category}
@@ -58,7 +61,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             </div>
           </div>
         </div>
-        
+
         {/* Action Buttons */}
         <div className="flex gap-2">
           {project.githubUrl && (
@@ -108,9 +111,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         onClick={() => setIsExpanded(!isExpanded)}
         className="flex items-center gap-2 text-primary hover:text-secondary transition-colors duration-300 font-medium"
         aria-expanded={isExpanded}
-        aria-label={isExpanded ? 'Show less details' : 'Show more details'}
+        aria-label={isExpanded ? "Show less details" : "Show more details"}
       >
-        {isExpanded ? 'Show Less' : 'Show More'}
+        {isExpanded ? "Show Less" : "Show More"}
         {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
       </button>
 
@@ -118,17 +121,24 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       {isExpanded && (
         <div className="mt-6 space-y-4 animate-fadeIn">
           <div>
-            <h4 className="text-lg font-semibold text-primary mb-2">About This Project</h4>
+            <h4 className="text-lg font-semibold text-primary mb-2">
+              About This Project
+            </h4>
             <p className="text-gray-300 leading-relaxed">
               {project.longDescription}
             </p>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold text-primary mb-2">Key Features</h4>
+            <h4 className="text-lg font-semibold text-primary mb-2">
+              Key Features
+            </h4>
             <ul className="space-y-1">
               {project.features.map((feature, index) => (
-                <li key={index} className="flex items-start gap-2 text-gray-300">
+                <li
+                  key={index}
+                  className="flex items-start gap-2 text-gray-300"
+                >
                   <span className="text-primary mt-1">•</span>
                   {feature}
                 </li>
@@ -138,11 +148,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
           {project.challenges && project.challenges.length > 0 && (
             <div>
-              <h4 className="text-lg font-semibold text-primary mb-2">Challenges Overcome</h4>
+              <h4 className="text-lg font-semibold text-primary mb-2">
+                Challenges Overcome
+              </h4>
               <ul className="space-y-1">
                 {project.challenges.map((challenge, index) => (
-                  <li key={index} className="flex items-start gap-2 text-gray-300">
-                    <span className="text-yellow-400 mt-1">⚡</span>
+                  <li
+                    key={index}
+                    className="flex items-start gap-2 text-gray-300"
+                  >
+                    <span className="text-yellow-400 mt-1">•</span>
                     {challenge}
                   </li>
                 ))}
@@ -152,11 +167,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
           {project.learnings && project.learnings.length > 0 && (
             <div>
-              <h4 className="text-lg font-semibold text-primary mb-2">What I Learned</h4>
+              <h4 className="text-lg font-semibold text-primary mb-2">
+                What I Learned
+              </h4>
               <ul className="space-y-1">
                 {project.learnings.map((learning, index) => (
-                  <li key={index} className="flex items-start gap-2 text-gray-300">
-                    <span className="text-blue-400 mt-1">💡</span>
+                  <li
+                    key={index}
+                    className="flex items-start gap-2 text-gray-300"
+                  >
+                    <span className="text-blue-400 mt-1">•</span>
                     {learning}
                   </li>
                 ))}

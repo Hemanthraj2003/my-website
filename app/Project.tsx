@@ -100,7 +100,6 @@ const Project = () => {
         </div>
       ) : (
         <div className="text-center py-12">
-          <div className="text-6xl mb-4">🔍</div>
           <h3 className="text-xl font-bold text-gray-300 mb-2">
             No projects found
           </h3>

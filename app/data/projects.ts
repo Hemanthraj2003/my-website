@@ -4,8 +4,8 @@ export interface Project {
   description: string;
   longDescription: string;
   technologies: string[];
-  category: 'web' | 'mobile' | 'desktop' | 'fullstack';
-  status: 'completed' | 'in-progress' | 'planned';
+  category: "web" | "mobile" | "desktop" | "fullstack";
+  status: "completed" | "in-progress" | "planned";
   image?: string;
   demoUrl?: string;
   githubUrl?: string;
@@ -16,151 +16,182 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 'portfolio-website',
-    title: 'Personal Portfolio Website',
-    description: 'A modern, responsive portfolio website built with Next.js and TypeScript',
-    longDescription: 'This portfolio website showcases my skills and projects with a modern design. Built using Next.js 14, TypeScript, and Tailwind CSS, it features responsive design, smooth animations, and optimized performance.',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'React', 'DaisyUI'],
-    category: 'web',
-    status: 'completed',
-    githubUrl: 'https://github.com/Hemanthraj2003/my-website',
-    demoUrl: 'https://hemanthraj.dev',
+    id: "portfolio-website",
+    title: "Personal Portfolio Website",
+    description:
+      "A modern, responsive portfolio website built with Next.js and TypeScript",
+    longDescription:
+      "This portfolio website showcases my skills and projects with a modern design. Built using Next.js 14, TypeScript, and Tailwind CSS, it features responsive design, smooth animations, and optimized performance.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React", "DaisyUI"],
+    category: "web",
+    status: "completed",
+    githubUrl: "https://github.com/Hemanthraj2003/my-website",
+    demoUrl: "https://hemanth-raj.netlify.app",
     features: [
-      'Responsive design for all devices',
-      'Modern UI with smooth animations',
-      'SEO optimized',
-      'Fast loading with Next.js optimization',
-      'Interactive skill showcase',
-      'Contact form integration'
+      "Responsive design for all devices",
+      "Modern UI with smooth animations",
+      "SEO optimized",
+      "Fast loading with Next.js optimization",
+      "Interactive skill showcase",
+      "Contact form integration",
     ],
     challenges: [
-      'Implementing smooth animations without affecting performance',
-      'Creating a responsive design that works across all devices',
-      'Optimizing images and assets for fast loading'
+      "Implementing smooth animations without affecting performance",
+      "Creating a responsive design that works across all devices",
+      "Optimizing images and assets for fast loading",
     ],
     learnings: [
-      'Advanced Next.js features and optimization techniques',
-      'Modern CSS animations and transitions',
-      'SEO best practices for React applications'
-    ]
+      "Advanced Next.js features and optimization techniques",
+      "Modern CSS animations and transitions",
+      "SEO best practices for React applications",
+    ],
   },
   {
-    id: 'task-management-app',
-    title: 'Task Management Application',
-    description: 'A full-stack task management app with real-time updates and team collaboration',
-    longDescription: 'A comprehensive task management solution built with the MERN stack. Features include real-time updates, team collaboration, project organization, and advanced filtering capabilities.',
-    technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'JWT'],
-    category: 'fullstack',
-    status: 'in-progress',
-    githubUrl: 'https://github.com/Hemanthraj2003/task-manager',
+    id: "library-management-system",
+    title: "Library Management System",
+    description:
+      "A comprehensive library management system built with Next.js and TypeScript",
+    longDescription:
+      "A full-featured library management system designed to handle book inventory, user management, and lending operations. Built with modern web technologies for optimal performance and user experience.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
+    category: "web",
+    status: "completed",
+    githubUrl: "https://github.com/Hemanthraj2003/library-management-system",
+    demoUrl: "https://github.com/Hemanthraj2003/library-management-system",
     features: [
-      'Real-time task updates using Socket.io',
-      'User authentication and authorization',
-      'Team collaboration and project sharing',
-      'Advanced task filtering and sorting',
-      'File attachments and comments',
-      'Email notifications'
+      "Book inventory management",
+      "User registration and management",
+      "Book lending and return system",
+      "Search and filter functionality",
+      "Responsive design",
+      "Admin dashboard",
     ],
     challenges: [
-      'Implementing real-time updates efficiently',
-      'Managing complex state with multiple users',
-      'Designing scalable database schema'
+      "Designing efficient database schema for library operations",
+      "Implementing complex search and filter logic",
+      "Managing state for multiple user roles",
     ],
     learnings: [
-      'Real-time communication with WebSockets',
-      'Advanced MongoDB aggregation pipelines',
-      'JWT authentication best practices'
-    ]
+      "Advanced database design patterns",
+      "Role-based access control implementation",
+      "Complex state management in React",
+    ],
   },
   {
-    id: 'weather-app',
-    title: 'Weather Forecast App',
-    description: 'A React Native weather app with location-based forecasts and beautiful UI',
-    longDescription: 'A mobile weather application that provides accurate weather forecasts based on user location. Features beautiful animations, detailed weather information, and offline capabilities.',
-    technologies: ['React Native', 'TypeScript', 'Expo', 'Weather API', 'AsyncStorage'],
-    category: 'mobile',
-    status: 'completed',
-    githubUrl: 'https://github.com/Hemanthraj2003/weather-app',
+    id: "youtube-clone",
+    title: "YouTube Clone",
+    description:
+      "A feature-rich YouTube clone built with React and modern web technologies",
+    longDescription:
+      "A comprehensive video streaming platform that replicates core YouTube functionalities. Features video playback, search capabilities, and responsive design for optimal viewing experience across devices.",
+    technologies: ["React", "JavaScript", "CSS", "HTML"],
+    category: "web",
+    status: "completed",
+    githubUrl: "https://github.com/Hemanthraj2003/youtubeclone",
+    demoUrl: "https://raj-youtube-clone.netlify.app/",
     features: [
-      'Location-based weather forecasts',
-      'Beautiful weather animations',
-      '7-day weather forecast',
-      'Offline data caching',
-      'Multiple location support',
-      'Weather alerts and notifications'
+      "Video streaming and playback",
+      "Search functionality",
+      "Responsive video player",
+      "Video recommendations",
+      "Modern UI design",
+      "Mobile-friendly interface",
     ],
     challenges: [
-      'Handling location permissions across platforms',
-      'Creating smooth weather animations',
-      'Implementing offline functionality'
+      "Implementing smooth video playback experience",
+      "Building responsive video player controls",
+      "Optimizing performance for video content",
     ],
     learnings: [
-      'React Native development best practices',
-      'Working with device APIs and permissions',
-      'Optimizing mobile app performance'
-    ]
+      "Video streaming implementation",
+      "Advanced React component architecture",
+      "Performance optimization for media content",
+    ],
   },
   {
-    id: 'ecommerce-platform',
-    title: 'E-commerce Platform',
-    description: 'A modern e-commerce platform with payment integration and admin dashboard',
-    longDescription: 'A complete e-commerce solution featuring product management, shopping cart, payment processing, and comprehensive admin dashboard. Built with modern technologies for scalability and performance.',
-    technologies: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Stripe', 'Tailwind CSS'],
-    category: 'fullstack',
-    status: 'planned',
+    id: "friends-cars-resale",
+    title: "Friends Cars - Car Resale Platform",
+    description:
+      "A comprehensive car resale platform with mobile app, admin panel, and backend API",
+    longDescription:
+      "A complete car resale solution featuring React Native mobile app, Next.js admin dashboard, and Node.js backend. This mono-repo project includes advanced filtering, real-time chat, and comprehensive car management features.",
+    technologies: [
+      "React Native",
+      "Next.js",
+      "Node.js",
+      "TypeScript",
+      "Firebase",
+      "Expo",
+    ],
+    category: "fullstack",
+    status: "completed",
+    githubUrl: "https://github.com/Hemanthraj2003/PROJECT_01",
+    demoUrl: "https://project-01-admin-pannel.vercel.app/",
     features: [
-      'Product catalog with search and filtering',
-      'Shopping cart and wishlist functionality',
-      'Secure payment processing with Stripe',
-      'User authentication and profiles',
-      'Admin dashboard for inventory management',
-      'Order tracking and management'
+      "Mobile app with advanced car filtering",
+      "Admin dashboard for car management",
+      "Real-time chat functionality",
+      "Image upload and processing",
+      "Offline support for mobile app",
+      "Firebase integration",
+      "Multi-platform deployment",
     ],
     challenges: [
-      'Implementing secure payment processing',
-      'Managing complex product variations',
-      'Building scalable inventory system'
+      "Managing mono-repo architecture",
+      "Implementing real-time features across platforms",
+      "Coordinating mobile, web, and backend development",
     ],
     learnings: [
-      'Payment gateway integration',
-      'Database design for e-commerce',
-      'Security best practices for financial data'
-    ]
+      "Mono-repo project management",
+      "Cross-platform development coordination",
+      "Firebase real-time database implementation",
+    ],
   },
   {
-    id: 'chat-application',
-    title: 'Real-time Chat Application',
-    description: 'A real-time chat app with group messaging and file sharing capabilities',
-    longDescription: 'A modern chat application supporting real-time messaging, group chats, file sharing, and emoji reactions. Built with Socket.io for instant communication and MongoDB for message persistence.',
-    technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'Express.js', 'Cloudinary'],
-    category: 'fullstack',
-    status: 'completed',
-    githubUrl: 'https://github.com/Hemanthraj2003/chat-app',
+    id: "pixelpirate-anime-platform",
+    title: "PixelPirate - Anime Listing Platform",
+    description:
+      "An anime content management and streaming platform with admin panel and Telegram integration",
+    longDescription:
+      "A comprehensive anime platform featuring content management, episode tracking, and Telegram bot integration. Built with React, TypeScript, and Supabase for modern anime content organization and distribution.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Supabase",
+      "Tailwind CSS",
+      "Telegram API",
+    ],
+    category: "web",
+    status: "in-progress",
+    githubUrl: "https://github.com/Hemanthraj2003/PixelPirate",
+    demoUrl: "https://pixelpirate.netlify.app/home",
     features: [
-      'Real-time messaging with Socket.io',
-      'Group chat functionality',
-      'File and image sharing',
-      'Emoji reactions and typing indicators',
-      'Message history and search',
-      'User presence indicators'
+      "Anime content management system",
+      "Episode and season organization",
+      "Admin panel for content moderation",
+      "Telegram bot integration",
+      "File link management",
+      "Quality-based content organization",
+      "Mobile-responsive design",
     ],
     challenges: [
-      'Handling multiple concurrent connections',
-      'Implementing efficient message delivery',
-      'Managing file uploads and storage'
+      "Building complex content management hierarchy",
+      "Integrating Telegram API for content distribution",
+      "Managing large amounts of media metadata",
     ],
     learnings: [
-      'WebSocket communication patterns',
-      'Real-time application architecture',
-      'File upload and cloud storage integration'
-    ]
-  }
+      "Complex database relationships and management",
+      "Telegram API integration",
+      "Content management system architecture",
+    ],
+  },
 ];
 
 export const getProjectsByCategory = (category: string) => {
-  return projects.filter(project => project.category === category);
+  return projects.filter((project) => project.category === category);
 };
 
 export const getProjectsByStatus = (status: string) => {
-  return projects.filter(project => project.status === status);
+  return projects.filter((project) => project.status === status);
 };
