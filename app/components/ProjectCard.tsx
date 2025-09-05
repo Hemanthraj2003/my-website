@@ -23,21 +23,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     }
   };
 
-  const getCategoryIcon = (category: string) => {
-    switch (category) {
-      case "web":
-        return "";
-      case "mobile":
-        return "";
-      case "desktop":
-        return "";
-      case "fullstack":
-        return "";
-      default:
-        return "";
-    }
-  };
-
   return (
     <div className="glass-effect p-6 rounded-2xl hover-lift group">
       {/* Header */}
